@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+:root{
+    --cor-1: #ffffff;
+    --cor-2: #03318c;
+    --cor-3: #5300C8;
+    --cor-5: #000000;
+    --cor-hover: #b2b6cc; 
+
+    --fonte-1: 'Press Start 2P', system-ui;
+    --fonte-2: 'IBM Plex Mono', monospace;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+.cabecalho{
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    background-color: var(--cor-3);
+    color: var(--cor-1);
+    font-family: var(--fonte-1);
+}
+
+.cabecalho__home{
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho__texto{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.estrutura{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2% 5%;
+    justify-content: center;
+}
+
+.estrutura__secao{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2% 5%;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    font-family: var(--fonte-1);
+}
+
+.estrutura__secao__produtos{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 50%;
+    height: 50rem;
+    gap: 40px;
+    align-items: center;
+}
+
+.img__lista{
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    padding: 4%;
+}
+
+.estrutura__secao__lista{
+    display: flex;
+    box-sizing: border-box;
+    gap: 20px;
+    overflow: scroll;
+    flex: 1;
+    flex-wrap: wrap;
+    font-family: var(--fonte-2);
+    justify-content: space-around;
+    
+}
+
+.estrutura__secao__lista__cards{
+    background-color: var(--cor-3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid var(--cor-5);
+    color: var(--cor-1);
+}
+.estrutura__secao__lista__titulo{
+    font-size: 0.7rem;
+    padding: 0 5%;
+}
+
+.estrutura__secao__lista__preco{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+
+.estrutura__secao__cadastro{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.estrutura__secao__cadastro__form{
+    font-family: var(--fonte-2);   
+}
+
+.estrutura__form{
+    padding: 0 10%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 30rem;
+    gap: 25px;
+    align-items: center;
+}
+.estrutura__form__button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 7%;
+}
+
+.estrutura__form__acoes{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    
+}
+
+.button{
+    font-family: var(--font-1);
+    font-size: 1rem;
+    color: var(--cor-3);
+    width: 45%;
+    border: 0.06rem solid;
+    border-color: var(--cor-2);
+    background-color: var(--cor-1);
+    border-radius: 0.3rem;
+    padding: 1rem 0.5rem;
+    align-items: center;
+}
+
+.button__ativo {
+    color: var(--cor-1);
+    background-color: var(--cor-2);
+}
+
+.button:hover{
+    color: var(--cor-1);
+    background-color: var(--cor-hover);
+}
+
+.button__inativo{
+    background-color: var(--cor-1) ;
+    border-color: var(--cor-2);
+    color: var(--cor-2);
+}
+
+.rodape{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-3);
+    font-family: var(--fonte-1);
+    color: var(--cor-1);
+}
+
+.rodape__logo{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.rodape__paragrafo{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    gap: 10px;
+    font-family: var(--fonte-2);
+}
+
+.inputs{
+	width: 80%;
+	padding: 10px;
+	border-radius: 50px;
+    color: var(--cor-2);
+    box-shadow: none;
+    outline: none;
+    font-family: var(--fonte-2);
+    border: 2px solid var(--cor-2);
+}
+
+.inputs::placeholder{
+    color: var(--cor-2);
+    font-family: var(--fonte-2);
+    border-color: var(--cor-2);
+   
+}
+
+@media(max-width: 500px){
+
+    .cabecalho{
+       width: 100%;
+    }
+    
+    .img{
+        width: 70%;
+    }
+    .cabecalho__home{
+        width: 25rem;
+        justify-content: center;
+    }
+    .cabecalho__texto{
+        font-size: 1rem;
+    }
+    .estrutura{
+        width: 100%;
+    }
+    .estrutura__secao{
+        flex-direction: column-reverse;
+    }
+    .estrutura__secao__produtos{
+        width: 100%;
+    }
+    .estrutura__secao__cadastro{
+        width: 100%;
+    }
+    .rodape__logo{
+        font-size: 1rem;
+        align-items: center;
+    }
+    .rodape__paragrafo{
+        font-size: 0.7rem;
+        gap: 10px;
+    }
+}

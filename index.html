@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="cabecalho__home">
+            <div class="cabecalho__img">
+                <a href="index.html"><img class="img" src="assets/coração3.png" alt="corações"></a>
+            </div>
+            <div class="cabecalho__texto">
+                <p>AluraGeek</p>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="estrutura">
+        <section class="estrutura__secao">
+            <div class="estrutura__secao__produtos">
+                <h2>MEUS PRODUTOS:</h2>
+                <ul class="estrutura__secao__lista" data-produto>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/caneca.png" alt="Banner">
+                                <div class="estrutura__secao__lista__titulo">
+                                    <h3>Stormtrooper</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/gameboy.png" alt="Banner">
+                        <div class="estrutura__secao__lista__titulo">
+                                    <h3>Game Boy Classic</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/caneca.png" alt="Banner">
+                                <div class="estrutura__secao__lista__titulo">
+                                    <h3>Stormtrooper</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/gameboy.png" alt="Banner">
+                        <div class="estrutura__secao__lista__titulo">
+                                    <h3>Game Boy Classic</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/caneca.png" alt="Banner">
+                                <div class="estrutura__secao__lista__titulo">
+                                    <h3>Stormtrooper</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/gameboy.png" alt="Banner">
+                        <div class="estrutura__secao__lista__titulo">
+                                    <h3>Game Boy Classic</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/caneca.png" alt="Banner">
+                                <div class="estrutura__secao__lista__titulo">
+                                    <h3>Stormtrooper</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/gameboy.png" alt="Banner">
+                        <div class="estrutura__secao__lista__titulo">
+                                    <h3>Game Boy Classic</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>
+                    <li class="estrutura__secao__lista__cards">
+                        <img class="img__lista" src="assets/caneca.png" alt="Banner">
+                                <div class="estrutura__secao__lista__titulo">
+                                    <h3>Stormtrooper</h3>
+                                </div>
+                                <div class="estrutura__secao__lista__preco">
+                                    <p>$ 60,00</p>
+                                    <img data-excluir src="assets/lixo.png" alt="icone">
+                                </div>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="estrutura__secao__cadastro">
+                <h2>ADICIONAR <br> PRODUTO:</h2>
+                <div class="estrutura__secao__cadastro__form">
+                    <form class="estrutura__form" data-formulario>
+                        <input id="nome" class="inputs" type="text" placeholder="Nome..." data-nome>
+                        <input id="valor" class="inputs" type="text" placeholder="Valor..." data-valor>
+                        <input id="imagem" class="inputs" type="text" placeholder="URL da Imagem (http://...)"  data-imagem>
+                        
+                        <div class="estrutura__form__acoes">
+                            <div class="estrutura__form__button">
+                                <button id="botContato" class="button button__ativo" type="submit">Guardar</button>
+
+                                <button id="botContato2" class="button button__inativo" type="submit">Limpar</button>
+
+                              </div>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__logo">
+           <a href=""><img class="img" src="assets/coração3.png" alt="corações">
+           </a><p>AluraGeek</p>
+        </div>
+        <div class="rodape__paragrafo">
+        <p>Desenvolvido por Geovani</p>
+        <p>ALURA LATAM - 2024</p>
+        </div>
+    </footer>
+
+    <script src="./js/conectaApi.js" type="module"></script>
+    <script src="./js/inserirProdutos.js" type="module"></script>
+    <script src="./js/enviarProduto.js" type="module"></script>
+   
+    
+    
+</body>
+</html>
